@@ -139,6 +139,7 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'anon': '100/day',
         'user': '1000/day',
+        'question-scope' : '10/day',
         'question' : '5/day',
         'question-get' : '10/day',
         'question-post' : '2/day',
