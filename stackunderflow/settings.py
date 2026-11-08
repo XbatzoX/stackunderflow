@@ -147,5 +147,8 @@ REST_FRAMEWORK = {
         'question-patch' : '2/day',
         'question-delete' : '2/day',
         'question-options' : '10/day',
-    }
+    },
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ],
 }
